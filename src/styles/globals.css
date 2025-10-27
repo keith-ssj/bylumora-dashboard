@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom global styles */
+html,
+body {
+  @apply bg-brand-primary text-white font-body;
+}
+
+a {
+  @apply text-brand-gold hover:underline;
+}
+
+/* Scrollbar styles for dark mode */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-brand-section;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-brand-gradientDark rounded-full;
+}
